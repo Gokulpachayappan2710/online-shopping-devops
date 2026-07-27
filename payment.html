@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Payment</title>
+<link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Payment</h1>
+
+<label>Customer Name</label>
+<input type="text" id="name" placeholder="Enter Name">
+
+<label>Order Amount</label>
+<input type="text" id="amount" value="₹5000" readonly>
+
+<h3>Select Payment Method</h3>
+
+<input type="radio" name="pay" checked> UPI<br><br>
+
+<input type="radio" name="pay"> Credit Card<br><br>
+
+<input type="radio" name="pay"> Debit Card<br><br>
+
+<input type="radio" name="pay"> Cash on Delivery<br><br>
+
+<button onclick="payment()">Pay Now</button>
+
+<p id="message"></p>
+
+</div>
+
+<script src="payment.js"></script>
+
+</body>
+</html>
