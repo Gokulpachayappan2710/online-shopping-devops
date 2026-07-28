@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<h1>Shopping Cart</h1>
+
+<div class="products">
+
+<div class="card">
+    <h3>Apple iPhone 16</h3>
+    <p>Price: ₹80000</p>
+    <button onclick="addToCart('Apple iPhone 16',80000)">Add to Cart</button>
+</div>
+
+<div class="card">
+    <h3>Samsung Galaxy S25</h3>
+    <p>Price: ₹75000</p>
+    <button onclick="addToCart('Samsung Galaxy S25',75000)">Add to Cart</button>
+</div>
+
+<div class="card">
+    <h3>Sony Headphones</h3>
+    <p>Price: ₹12000</p>
+    <button onclick="addToCart('Sony Headphones',12000)">Add to Cart</button>
+</div>
+
+</div>
+
+<hr>
+
+<h2>Cart</h2>
+
+<ul id="cartItems"></ul>
+
+<h3>Total: ₹<span id="total">0</span></h3>
+
+<button onclick="placeOrder()">Place Order</button>
+
+<script src="cart.js"></script>
+
+</body>
+</html>
