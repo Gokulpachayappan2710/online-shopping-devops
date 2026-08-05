@@ -10,6 +10,6 @@ return;
 
 }
 
-document.getElementById("message").innerHTML="✅ Payment Successful!<br>Thank You For Shopping.";
+document.getElementById("message").innerHTML="✅ Payment Successful!<br>Thank You For Shoppings.";
 
 }
