@@ -1,5 +1,33 @@
-public class HelloWorld {
+public class Product {
+    private String id;
+    private String name;
+    private double price;
+
+    public Product(String id, String name, double price) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{id='" + id + "', name='" + name + "', price=" + price + "}";
+    }
+
     public static void main(String[] args) {
-        System.out.println("Hello, online-shopping-devops!");
+        Product product = new Product("P1001", "Laptop", 899.99);
+        System.out.println(product);
     }
 }
